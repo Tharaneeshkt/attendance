@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #000000);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  background: #181818;
+  padding: 40px;
+  border-radius: 25px;
+  border: 1px solid rgba(255,255,255,0.15);
+  box-shadow: 0 15px 40px rgba(255,255,255,0.08);
+}
+
+h1 {
+  text-align: center;
+  color: #e5e7eb;
+  font-size: 50px;
+  margin-bottom: 35px;
+  letter-spacing: 1px;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222222;
+  padding: 25px;
+  border-radius: 20px;
+  margin-bottom: 35px;
+}
+
+.summary h3 {
+  color: white;
+  font-size: 22px;
+}
+
+.summary button {
+  background: #d1d5db;
+  color: black;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.summary button:hover {
+  background: #e5e7eb;
+  transform: translateY(-3px);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+
+thead {
+  background: linear-gradient(90deg, #6b7280, #d1d5db);
+}
+
+th {
+  color: black;
+  padding: 20px;
+  font-size: 20px;
+}
+
+thead th:first-child {
+  border-top-left-radius: 15px;
+}
+
+thead th:last-child {
+  border-top-right-radius: 15px;
+}
+
+td {
+  color: white;
+  text-align: center;
+  padding: 25px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+tbody tr:hover {
+  background: #2a2a2a;
+}
+
+td button {
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+td button:first-child {
+  background: #22c55e;
+  margin-right: 10px;
+}
+
+td button:first-child:hover {
+  background: #16a34a;
+  transform: scale(1.05);
+}
+
+td button:last-child {
+  background: #ef4444;
+}
+
+td button:last-child:hover {
+  background: #dc2626;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+
+  .container {
+    padding: 20px;
+  }
+
+  .summary {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  th,
+  td {
+    padding: 15px;
+    font-size: 15px;
+  }
+}
